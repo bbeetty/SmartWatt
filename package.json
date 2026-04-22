@@ -1,0 +1,21 @@
+{
+  "name": "smartwatt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SmartWatt — 家庭能源管理 Web App（練習專案）",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.3",
+    "typescript": "^5.5.4"
+  }
+}
