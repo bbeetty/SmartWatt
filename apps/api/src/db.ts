@@ -1,13 +1,10 @@
-import { Pool } from 'pg';
+import { Pool, neonConfig } from '@neondatabase/serverless';
+import ws from 'ws';
 
-const connectionString = process.env.POSTGRES_URL?.replace(/[?&]sslmode=[^&]+/, '') ?? ''
+neonConfig.webSocketConstructor = ws;
 
 const pool = new Pool({
-  connectionString,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
-  max: 3,
-  connectionTimeoutMillis: 8_000,
-  idleTimeoutMillis: 10_000,
+  connectionString: process.env.POSTGRES_URL,
 });
 
 const MIGRATIONS: { version: string; sql: string }[] = [
