@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "turbo run build --filter=@smartwatt/web",
   "outputDirectory": "apps/web/dist",
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --prod=false",
   "framework": null,
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/apps/api/api/index" }
