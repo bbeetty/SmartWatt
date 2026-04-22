@@ -4,10 +4,7 @@
   "outputDirectory": "apps/web/dist",
   "installCommand": "pnpm install --prod=false",
   "framework": null,
-  "functions": {
-    "apps/api/api/index.ts": { "maxDuration": 10 }
-  },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/apps/api/api/index" }
+    { "source": "/api/(.*)", "destination": "/api/index" }
   ]
 }
