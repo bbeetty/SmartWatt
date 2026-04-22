@@ -45,8 +45,8 @@ export default function AppLayout() {
     <Layout style={{ minHeight: '100vh' }}>
       {!isMobile && (
         <Sider width={200} theme="dark">
-          <div style={{ height: 32, margin: 16, background: 'rgba(255,255,255,.2)', borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: 16 }}>
-            ⚡ SmartWatt
+          <div style={{ padding: '20px 24px 12px', color: '#fff', fontWeight: 700, fontSize: 18 }}>
+            SmartWatt
           </div>
           {commonMenu}
         </Sider>
