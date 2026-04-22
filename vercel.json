@@ -5,7 +5,7 @@
   "installCommand": "pnpm install --prod=false",
   "framework": null,
   "functions": {
-    "apps/api/api/index.ts": {}
+    "apps/api/api/index.ts": { "runtime": "@vercel/node" }
   },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/apps/api/api/index" }
