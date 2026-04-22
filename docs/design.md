@@ -21,7 +21,7 @@
 // apps/web/src/theme.ts
 export const themeToken = {
   token: {
-    colorPrimary:    '#1677ff',   // AntD 預設藍（保留）
+    colorPrimary:    '#299C87',   // AntD 預設藍（保留）
     colorSuccess:    '#52c41a',   // 節能達標、正向數字
     colorWarning:    '#faad14',   // 用電偏高提示
     colorError:      '#ff4d4f',   // 超出預算
