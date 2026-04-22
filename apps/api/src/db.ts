@@ -1,10 +1,13 @@
 import { Pool } from 'pg';
 
+const connectionString = process.env.POSTGRES_URL?.replace(/[?&]sslmode=[^&]+/, '') ?? ''
+
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString,
   ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
-  max: 10,
-  idleTimeoutMillis: 30_000,
+  max: 3,
+  connectionTimeoutMillis: 8_000,
+  idleTimeoutMillis: 10_000,
 });
 
 const MIGRATIONS: { version: string; sql: string }[] = [
