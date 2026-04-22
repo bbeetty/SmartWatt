@@ -12,8 +12,13 @@ export const themeToken: ThemeConfig = {
   },
   components: {
     Layout: {
-      siderBg: '#001529',       // AntD 深色 Sider 預設
-      triggerBg: '#002140',
+      siderBg: '#175247',
+      triggerBg: '#003366',
+    },
+    Menu: {
+      darkItemBg: '#175247',
+      darkSubMenuItemBg: '#175247',
+      darkPopupBg: '#175247',
     },
     Statistic: {
       titleFontSize: 13,

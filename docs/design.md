@@ -31,8 +31,8 @@ export const themeToken = {
   },
   components: {
     Layout: {
-      siderBg:       '#001529',   // AntD 深色 Sider 預設
-      triggerBg:     '#002140',
+      siderBg:       '#175247ff',   // AntD 深色 Sider 預設
+      triggerBg:     '#003366',
     },
     Statistic: {
       titleFontSize: 13,
