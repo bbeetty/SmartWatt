@@ -91,7 +91,7 @@ export default function Settings() {
             <Text type="secondary" style={{ display: 'block', marginBottom: 12 }}>
               費率由後端 <Text code>services/pricing.ts</Text> 定義，如需更新請修改程式碼。
             </Text>
-            <Divider orientation="start">{RATE_TABLE.summer.label}</Divider>
+            <Divider>{RATE_TABLE.summer.label}</Divider>
             <Table
               size="small"
               rowKey="range"
@@ -99,7 +99,7 @@ export default function Settings() {
               columns={tierColumns}
               pagination={false}
             />
-            <Divider orientation="start" style={{ marginTop: 16 }}>{RATE_TABLE.nonSummer.label}</Divider>
+            <Divider style={{ marginTop: 16 }}>{RATE_TABLE.nonSummer.label}</Divider>
             <Table
               size="small"
               rowKey="range"
